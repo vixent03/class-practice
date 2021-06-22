@@ -3,9 +3,8 @@ const expect = chai.expect;
 
 const spies = require("chai-spies");
 chai.use(spies);
-const expect = chai.expect;
 
-const { Student, Teacher } = require("../classPractice");
+const { Student, Teacher } = require("../class-practice");
 
 describe("Student class", () => {
   let student1;
