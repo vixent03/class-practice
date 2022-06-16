@@ -7,6 +7,8 @@ defining static and instance methods.
 
 Clone the starter from the **Download** link at the bottom of this page.
 
+Run ```npm install``` to install any dependencies.
+
 ## Directions
 
 Implement the following in the __classes/person.js__ file.
@@ -18,7 +20,7 @@ Create a class `Person` that has the following:
    `console.log` with a string saying, "Hi, I'm `<firstName>` `<lastName>`, and
    I'm `<age>` years old.".
 3. a static method called `introducePeople` that will take in an array of
-   `Person` instances. Have the method `console.log` an error message of 
+   `Person` instances. Have the method `console.log` an error message of
    "introducePeople only takes an array as an argument." if the argument is not
    of type `Array`. Have the method `console.log` an error message of
    "All items in array must be Person class instances." if any of the items in
