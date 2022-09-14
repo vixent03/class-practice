@@ -20,13 +20,18 @@ Create a class `Person` that has the following:
    `console.log` with a string saying, "Hi, I'm `<firstName>` `<lastName>`, and
    I'm `<age>` years old.".
 3. a static method called `introducePeople` that will take in an array of
-   `Person` instances. Have the method `console.log` an error message of
+   `Person` instances. 
+   
+   Have `introducePeople` throw an Error with a message of
    "introducePeople only takes an array as an argument." if the argument is not
-   of type `Array`. Have the method `console.log` an error message of
+   of type `Array`.
+   
+   Have `introducePeople` throw an Error with a message of
    "All items in array must be Person class instances." if any of the items in
-   the array are not instances of the `Person` class. If there are no errors
-   logged to the console, call `introduce` on each of the `People` instances in
-   the input array.
+   the array are not instances of the `Person` class.
+   
+   If no Errors are thrown `introducePeople` should call `introduce` on 
+   each of the `People` instances in the input array.
 
 Run the test specs in the __test/person-spec.js__ file to test that you
 have created the `Person` class correctly:
