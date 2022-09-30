@@ -30,12 +30,21 @@ Create a class `Person` that has the following:
    "All items in array must be Person class instances." if any of the items in
    the array are not instances of the `Person` class.
    
-   If no Errors are thrown `introducePeople` should call `introduce` on 
+   If no Errors are thrown then `introducePeople` should call `introduce` on 
    each of the `People` instances in the input array.
 
+>Tip: We'll dive into `Errors` in more detail later. For now, just know that
+ an `Error` is also a `Class`, and when you throw a new error the
+ first argument will be that error's message. 
+ Use MDN's [Error Examples][errExp] and [Error Constructor][errCon] 
+ to help you out if you're stuck.
+ 
 Run the test specs in the __test/person-spec.js__ file to test that you
 have created the `Person` class correctly:
 
 ```shell
 npm test
 ```
+
+[errExp]:https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error#examples
+[errCon]:https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error/Error

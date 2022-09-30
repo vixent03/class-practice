@@ -55,7 +55,7 @@ describe("Person class", () => {
     it("should throw an error if input is not an array", () => {
       let badInput = "bad input";
 
-      expect(() => Person.introducePeople(badInput)).to.throw.Error(
+      expect(() => Person.introducePeople(badInput)).to.throw(Error,
         "introducePeople only takes an array as an argument."
       );
     });
@@ -63,7 +63,7 @@ describe("Person class", () => {
     it('should throw an error if array does not contain instances of Person', () => {
       let badInput = ['dog', person]
 
-      expect(() => Person.introducePeople(badInput)).to.throw.Error(
+      expect(() => Person.introducePeople(badInput)).to.throw(Error, 
         "All items in array must be Person class instances."
       );
     })
